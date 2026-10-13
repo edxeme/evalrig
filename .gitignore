@@ -1,0 +1,5 @@
+/evalrig
+/evalrig.test
+runs/
+coverage.out
+.DS_Store
