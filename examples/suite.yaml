@@ -1,0 +1,33 @@
+name: core-skills
+version: 1
+
+defaults:
+  timeout: 5m
+
+tasks:
+  - id: fix-grep
+    image: python:3.12-alpine
+    dir: tasks/fix-grep
+    files: files
+    prompt: prompt.md
+    golden: solution.sh
+    verify:
+      - verify.sh
+
+  - id: json-sum
+    image: golang:1.24-alpine
+    dir: tasks/json-sum
+    files: files
+    prompt: prompt.md
+    golden: solution.sh
+    verify:
+      - verify.sh
+
+  - id: csv-report
+    image: python:3.12-alpine
+    dir: tasks/csv-report
+    files: files
+    prompt: prompt.md
+    golden: solution.sh
+    verify:
+      - verify.sh

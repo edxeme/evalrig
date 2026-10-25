@@ -1,0 +1,3 @@
+americas: 1500
+emea: 1500
+apac: 1250
